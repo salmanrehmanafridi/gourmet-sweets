@@ -13,9 +13,9 @@ export default function Home() {
         <Hero />
         <Banner />
         <WhyChooseUs />
-        {/* <OurMenu /> */}
+        <OurMenu />
         <ImageSection />
-        {/* <OurClientSay/> */}
+        <OurClientSay/>
         <VisitUs />
         <ContactUs />
     </div>

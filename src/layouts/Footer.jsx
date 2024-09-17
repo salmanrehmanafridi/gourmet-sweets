@@ -1,5 +1,5 @@
 import Logo from "../assets/logo.svg";
-import visaImage from '../assets/visa.svg'
+import visaImage from '../assets/Visa.svg'
 import MastercardImage from '../assets/Mastercard.svg'
 import AmericanExpressImage from '../assets/american-express.svg'
 import { FaFacebook, FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
