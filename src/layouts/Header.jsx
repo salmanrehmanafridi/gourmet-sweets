@@ -2,6 +2,7 @@ import { useState } from "react";
 import Logo from "../assets/logo.svg";
 import Button from "../components/Button";
 import { IoMdClose, IoMdMenu } from "react-icons/io";
+import { Link } from "react-router-dom";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -12,19 +13,19 @@ export default function Header() {
   const navLinks = [
     {
       link: "Welcome",
-      href: "/",
+      href: "#welcome",
     },
     {
-      link: "Our menu",
-      href: "/",
+      link: "Our Menu",
+      href: "#our-menu",
     },
     {
-      link: "Franschise",
+      link: "Franchise",
       href: "/",
     },
     {
       link: "Contact",
-      href: "/",
+      href: "#contact",
     },
   ];
   return (
@@ -37,9 +38,9 @@ export default function Header() {
           <ul className="flex gap-8">
             {navLinks?.map((item, index) => (
               <li key={index}>
-                <a href={item.href} className="text-white">
+                <Link to={item.href} className="text-white font-inter font-semibold text-lg hover:text-primary transition-all duration-200 ease-in">
                   {item.link}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -48,7 +49,7 @@ export default function Header() {
         <div>
           <Button
             title="Become a member"
-            classname="bg-primary px-6 py-3 rounded-full text-white"
+            classname="bg-primary px-6 py-3 rounded-full text-white font-semibold text-base hover:bg-opacity-0 border-2 border-primary hover:border-2 hover:border-primary transition-all duration-200 ease-in "
           />
         </div>
       </div>

@@ -5,9 +5,9 @@ import { FaLocationDot } from "react-icons/fa6";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
-export default function ContactUs() {
+export default function ContactUs({id}) {
   return (
-    <div className="bg-black pb-16">
+    <div className="bg-black pb-16" id={id}>
       <div className="flex justify-between">
         <img src={icon1} alt="no-img" className="w-[100px] h-[90px] md:w-[229px] md:h-[206px]"/>
         <img src={icon2} alt="no-img" className="w-[100px] h-[90px] md:w-[229px] md:h-[206px]" />
@@ -112,9 +112,9 @@ export default function ContactUs() {
         </div>
         
       </div>
-      {/* <div className="mt-10">
+      <div className="mt-10">
           <MapContainer
-            center={[51.505, -0.09]}
+            center={[40.706001, -73.997002]}
             zoom={13}
             scrollWheelZoom={false}
             className="w-[80%] md:h-[70vh] h-[40vh] m-auto rounded-3xl "
@@ -123,13 +123,13 @@ export default function ContactUs() {
               attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
-            <Marker position={[51.505, -0.09]}>
+            <Marker position={[40.706001, -73.997002]}>
               <Popup>
                 A pretty CSS3 popup. <br /> Easily customizable.
               </Popup>
             </Marker>
           </MapContainer>
-       </div> */}
+       </div>
     </div>
   );
 }

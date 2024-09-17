@@ -1,7 +1,7 @@
-import AnimatedNumbers from "react-animated-numbers";
 import AnimatedNum from "./AnimatedNum";
+import React from "react";
 
-export default function Banner() {
+const Banner =React.memo (() =>  {
   const array = [
     {
       numbers: "2M+",
@@ -22,7 +22,7 @@ export default function Banner() {
   ];
   return (
     <div className="bg-banner bg-cover bg-no-repeat bg-center flex justify-center items-center flex-col p-10">
-      <h2 className="font-inter text-center md:text-start text-white text-4xl font-semibold">
+      <h2 className="font-inter text-center md:text-start text-white text-5xl font-semibold">
         We believe in making quality food
       </h2>
       <div className=" flex flex-col md:flex-row md:gap-36 gap-14 mt-10">
@@ -35,7 +35,7 @@ export default function Banner() {
             value={numericPart}
             suffix={suffix}
             fontStyle={{
-              fontSize: 40,
+              fontSize: 56,
               color: "white",
               fontWeight: "bold",
             }}
@@ -50,4 +50,6 @@ export default function Banner() {
       </div>
     </div>
   );
-}
+})
+
+export default Banner

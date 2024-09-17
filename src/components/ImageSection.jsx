@@ -7,12 +7,12 @@ import Image6 from "../assets/image6.svg";
 export default function ImageSection() {
   return (
     <div className="bg-black p-4 overflow-hidden">
-      <h2 className="text-center font-inter font-bold md:text-5xl text-4xl text-white">
+      <h2 className="text-center font-inter font-bold md:text-5xl text-4xl text-white pt-10">
         Our Gallery
       </h2>
-      <p className="text-center font-inter font-normal md:text-5xl text-base text-white py-5">
+      <p className="text-center font-inter font-normal text-base text-white py-8">
         Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever.
+        industry. Lorem Ipsum has been <br /> the industry's standard dummy text ever.
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry.
       </p>

@@ -2,7 +2,7 @@ import React from "react";
 import menu1 from "../assets/menu1.svg"; // Import as URL
 import menu2 from "../assets/menu2.svg"; // Import as URL
 import menu3 from "../assets/menu3.svg";
-export default function OurMenu() {
+export default function OurMenu({id}) {
   const menuItems = [
     {
       title: "Signature Dishes",
@@ -24,7 +24,7 @@ export default function OurMenu() {
     },
   ];
   return (
-    <div className="bg-menu-bg bg-cover bg-no-repeat bg-center p-10">
+    <div className="bg-menu-bg bg-cover bg-no-repeat bg-center p-10" id={id}>
       <h2 className="font-inter font-bold text-white text-5xl text-center">Our Menu Highlights</h2>
       <p className="font-inter font-normal text-white text-xl text-center my-8">
         Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -41,7 +41,7 @@ export default function OurMenu() {
             <div className="h-64 w-full flex">{item.image}</div>
             <div>
               <h4 className="font-inter font-bold text-white text-2xl">{item.title}</h4>
-              <p className="font-inter font-normal text-white text-base pt-3">
+              <p className="font-inter font-normal text-[#EEE] text-base pt-3">
                 {item.content}
               </p>
             </div>
